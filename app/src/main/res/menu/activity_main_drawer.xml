@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_reportHistory"
+            android:icon="@drawable/icn_report"
+            android:title="Report History" />
+        <item
+            android:id="@+id/nav_chatHistory"
+            android:icon="@drawable/icn_chathistory"
+            android:title="Chat History" />
+        <item
+            android:id="@+id/nav_sendPush"
+            android:icon="@drawable/icn_notification"
+            android:title="Send Push" />
+        <item
+            android:id="@+id/nav_filterPeople"
+            android:icon="@drawable/icn_contact"
+            android:title="Filter Peoples" />
+    </group>
+
+    <item android:title="Account">
+        <menu>
+            <item
+                android:id="@+id/nav_resetPwd"
+                android:icon="@drawable/icn_settings"
+                android:title="Reset Password" />
+            <item
+                android:id="@+id/nav_signOut"
+                android:icon="@drawable/icn_logout"
+                android:title="Sign out" />
+        </menu>
+    </item>
+
+</menu>
