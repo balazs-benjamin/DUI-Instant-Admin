@@ -204,7 +204,7 @@ public class MainActivity extends AppCompatActivity
             fragment = FilterUsersListFragment.newInstance(1);
             title = "Filter users by city";
             viewIsAtHome = false;
-        } else if (id == R.id.nav_resetPwd) {
+        } /*else if (id == R.id.nav_resetPwd) {
             FirebaseAuth auth = FirebaseAuth.getInstance();
             SharedPreferences sharedPref = getSharedPreferences("com.dcmmoguls.offthejailadmin", Context.MODE_PRIVATE);
             String emailAddress = sharedPref.getString("email", "");
@@ -230,7 +230,7 @@ public class MainActivity extends AppCompatActivity
                             }
                         }
                     });
-        } else if (id == R.id.nav_signOut) {
+        } */else if (id == R.id.nav_signOut) {
             FirebaseAuth.getInstance().signOut();
 
             SharedPreferences sharedPref = getSharedPreferences("com.dcmmoguls.offthejailadmin", Context.MODE_PRIVATE);

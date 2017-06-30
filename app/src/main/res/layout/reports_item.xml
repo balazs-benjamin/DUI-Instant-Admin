@@ -32,6 +32,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:gravity="center_vertical"
                 android:text="Name"
                 android:textAppearance="?attr/textAppearanceListItem" />
 
@@ -39,11 +40,11 @@
                 android:id="@+id/tvAddress"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/tvName"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="40dp"
                 android:layout_toRightOf="@+id/tvName"
                 android:layout_weight="1"
+                android:gravity="center_vertical"
                 android:text="@string/attorney_phone" />
 
         </RelativeLayout>
@@ -59,6 +60,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:gravity="center_vertical"
                 android:text="Name"
                 android:textAppearance="@android:style/TextAppearance.Material.Small" />
 
@@ -66,11 +68,11 @@
                 android:id="@+id/tvEmail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/tvPhone"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="40dp"
                 android:layout_toRightOf="@+id/tvPhone"
                 android:layout_weight="1"
+                android:gravity="center_vertical"
                 android:text="@string/attorney_phone" />
 
         </RelativeLayout>

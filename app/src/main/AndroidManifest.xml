@@ -64,6 +64,15 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyB2TxgIva7BT7P102htsBpXrP0psXPHaP8" />
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.dcmmoguls.offthejailadmin.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
 
         <activity
             android:name=".SplashActivity"
@@ -86,7 +95,8 @@
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".MessagesActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"></activity>
 
         <receiver android:name="com.onesignal.NotificationOpenedReceiver" />
         <meta-data android:name="com.onesignal.NotificationOpened.DEFAULT" android:value="DISABLE" />

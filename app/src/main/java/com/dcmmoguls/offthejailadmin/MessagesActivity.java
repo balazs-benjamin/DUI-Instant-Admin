@@ -303,7 +303,7 @@ public class MessagesActivity extends AppCompatActivity
             // Continue only if the File was successfully created
             if (photoFile != null) {
                 photoURI = FileProvider.getUriForFile(this,
-                        "com.dcmmoguls.hardinglaw.fileprovider",
+                        "com.dcmmoguls.offthejailadmin.fileprovider",
                         photoFile);
                 takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, photoURI);
                 MessagesActivity.this.startActivityForResult(takePictureIntent, REQUEST_TAKE_PHOTO);
@@ -414,7 +414,7 @@ public class MessagesActivity extends AppCompatActivity
     protected void onStop() {
         super.onStop();
 
-        finish();
+        //finish();
     }
 
 /*

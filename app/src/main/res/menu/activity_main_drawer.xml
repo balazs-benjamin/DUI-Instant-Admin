@@ -23,10 +23,6 @@
     <item android:title="Account">
         <menu>
             <item
-                android:id="@+id/nav_resetPwd"
-                android:icon="@drawable/icn_settings"
-                android:title="Reset Password" />
-            <item
                 android:id="@+id/nav_signOut"
                 android:icon="@drawable/icn_logout"
                 android:title="Sign out" />
